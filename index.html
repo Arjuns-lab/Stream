@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamPulse OTT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--color-primary)',
+              secondary: 'var(--color-secondary)',
+              surface: 'var(--color-surface)',
+              background: 'var(--color-background)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --color-primary: #e50914;
+        --color-secondary: #ffffff;
+        --color-surface: #1f1f1f;
+        --color-background: #141414;
+      }
+      .theme-midnight {
+        --color-primary: #e50914;
+        --color-surface: #18181b;
+        --color-background: #000000;
+      }
+      .theme-amoled {
+        --color-primary: #3b82f6;
+        --color-surface: #000000;
+        --color-background: #000000;
+      }
+      .theme-diwali {
+        --color-primary: #fbbf24;
+        --color-surface: #4a044e;
+        --color-background: #2e0236;
+      }
+      .theme-anime {
+        --color-primary: #ec4899;
+        --color-surface: #1f2937;
+        --color-background: #111827;
+      }
+      body {
+        background-color: var(--color-background);
+        color: var(--color-secondary);
+        transition: background-color 0.3s, color 0.3s;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
